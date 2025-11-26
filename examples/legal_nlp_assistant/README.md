@@ -4,7 +4,7 @@ This project is a complete **Legal NLP pipeline** built on top of spaCy.
 It demonstrates how to perform **Text classification**, **legal entity extraction**, and **contract risk scoring**.
 It is part of my custom fork of spaCy.
 
----
+
 
 ##  Project Features
 
@@ -15,7 +15,7 @@ Detects common legal clauses within contractual text:
 - GOVERNING_LAW  
 - OTHER
 
---
+
 
 ### 2. Legal NER 
 Extracts structured legal information such as:
@@ -25,7 +25,7 @@ Extracts structured legal information such as:
 - LOCATION  
 - DURATION  
 - OTHER 
--- 
+
 
 ### 3. Risk Scoring
 A custom spaCy component computes a **risk_score** between 0–1 based on:
@@ -39,6 +39,5 @@ The trained pipeline can be deployed as a REST API using FastAPI:
 - Supports long legal documents  
 - Returns structured predictions 
 
----
 
 
