@@ -1,0 +1,62 @@
+# Project: Legal NLP Assistant (text classification + Legal NER + Risk Scoring)
+
+title: "Legal NLP Assistant"
+description: >
+  A spaCy project for legal text classification, legal NER, and contract risk scoring.
+  Includes full workflow: data preparation, training, evaluation, and inference demo.
+
+# Project directory structure
+directories:
+  assets: assets
+  configs: configs
+  scripts: scripts
+  components: components
+  notebooks: notebooks
+  
+
+
+# WORKFLOWS
+
+workflows:
+  all:
+    - prepare
+    - train
+    - evaluate
+
+#  COMMANDS
+
+commands:
+
+  # Preparing data
+
+  prepare:
+    help: "Convert raw training data to spaCy .spacy format"
+    script:
+      - python scripts/convert_data.py assets/raw_data.json assets/train.spacy assets/dev.spacy
+
+  # Training
+
+  train:
+    help: "Train the complete legal NLP pipeline"
+    script:
+      - python -m spacy train configs/config.cfg --output training/
+
+  # Evaluation
+
+  evaluate:
+    help: "Evaluate the trained model"
+    script:
+      - python scripts/evaluate.py training/model-best assets/dev.spacy
+
+#  ASSETS
+
+assets:
+  raw_data:
+    description: "Raw labeled data for clause classification + NER"
+    path: assets/raw_data.json
+
+
+# CONFIGS
+
+configs:
+  base_config: configs/config.cfg
