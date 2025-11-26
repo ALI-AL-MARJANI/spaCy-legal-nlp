@@ -1,4 +1,3 @@
----
 
 ## Custom Extension: Legal NLP Assistant 
 
@@ -13,4 +12,3 @@ This fork includes a complete end-to-end NLP project for contract analysis:
 Project folder:  
 **[`examples/legal_nlp_assistant`](examples/legal_nlp_assistant)**
 
----
