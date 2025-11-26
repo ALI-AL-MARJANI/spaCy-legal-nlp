@@ -1,0 +1,49 @@
+[
+  {
+    "text": "This Agreement is made between ACME Corp and Beta Solutions Ltd. The contract shall begin on March 1, 2025. The Supplier accepts full liability for any damages without limitation. Payment of $140,000 is due within 30 days.",
+    "cats": {
+      "TERMINATION": 0.0,
+      "CONFIDENTIALITY": 0.0,
+      "LIABILITY": 1.0,
+      "PAYMENT_TERMS": 1.0,
+      "GOVERNING_LAW": 0.0,
+      "FORCE_MAJEURE": 0.0
+    },
+    "entities": [
+      {"start": 33, "end": 42, "label": "PARTY"},
+      {"start": 47, "end": 65, "label": "PARTY"},
+      {"start": 92, "end": 104, "label": "EFFECTIVE_DATE"},
+      {"start": 178, "end": 186, "label": "PAYMENT_AMOUNT"}
+    ]
+  },
+  {
+    "text": "Either party may terminate this Agreement by providing 60 days written notice. This contract is governed by the laws of New York. Confidentiality applies to all shared data.",
+    "cats": {
+      "TERMINATION": 1.0,
+      "CONFIDENTIALITY": 1.0,
+      "LIABILITY": 0.0,
+      "PAYMENT_TERMS": 0.0,
+      "GOVERNING_LAW": 1.0,
+      "FORCE_MAJEURE": 0.0
+    },
+    "entities": [
+      {"start": 52, "end": 64, "label": "DURATION"},
+      {"start": 112, "end": 120, "label": "LOCATION"}
+    ]
+  },
+  {
+    "text": "The Agreement shall remain in effect for a period of 12 months. Force majeure clauses apply in cases of natural disasters. Payment of €50,000 is due upon completion.",
+    "cats": {
+      "TERMINATION": 0.0,
+      "CONFIDENTIALITY": 0.0,
+      "LIABILITY": 0.0,
+      "PAYMENT_TERMS": 1.0,
+      "GOVERNING_LAW": 0.0,
+      "FORCE_MAJEURE": 1.0
+    },
+    "entities": [
+      {"start": 57, "end": 67, "label": "DURATION"},
+      {"start": 155, "end": 163, "label": "PAYMENT_AMOUNT"}
+    ]
+  }
+]
